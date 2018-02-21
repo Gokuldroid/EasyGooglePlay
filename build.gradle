@@ -4,7 +4,7 @@ task wrapper(type: Wrapper) {
 }
 
 buildscript {
-    ext.kotlin_version = '1.2.10'
+    ext.kotlin_version = '1.2.21'
 
     repositories {
         mavenCentral()
@@ -27,30 +27,33 @@ apply plugin: 'maven-publish'
 sourceCompatibility = 1.8
 
 repositories {
+    jcenter()
+    maven { url 'https://maven.google.com' }
     mavenCentral()
 }
 
 dependencies {
     compile gradleApi()
-    compile 'com.android.tools.build:gradle:2.3.0'
+    compile 'com.android.tools.build:gradle:3.0.0'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile group: 'org.json', name: 'json', version: '20090211'
     compile 'com.google.apis:google-api-services-androidpublisher:v2-rev41-1.22.0'
+    compile group: 'org.eclipse.jgit', name: 'org.eclipse.jgit', version: '2.2.0.201212191850-r'
 }
 
-version = "1.1.1"
-group = "me.tuple.easyplay"
+version = "1.1.2"
+group = "me.tuple.easygoogleplay"
 
 pluginBundle {
     website = 'http://gokuldroid.github.io/'
-    vcsUrl = 'https://github.com/Gokuldroid/easyplay'
+    vcsUrl = 'https://github.com/Gokuldroid/EasyGooglePlay'
     description = 'Plugin to publish android app from Android studio'
     tags = ['Android', 'Play store','Continuous deployment']
 
     plugins {
         greetingsPlugin {
-            id = 'me.tuple.easyplay'
+            id = 'me.tuple.easygoogleplay'
             displayName = 'Easy Play'
         }
     }

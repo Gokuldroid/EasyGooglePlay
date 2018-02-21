@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id="easygoogleplay:test" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="me.tuple.easyplay" external.system.module.type="sourceSet" external.system.module.version="1.1.1" type="JAVA_MODULE" version="4">
+<module external.linked.project.id="easygoogleplay:test" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="me.tuple.easygoogleplay" external.system.module.type="sourceSet" external.system.module.version="1.1.2" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="kotlin-language" name="Kotlin">
       <configuration version="3" platform="JVM 1.6" useProjectSettings="false">
@@ -33,7 +33,17 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="easygoogleplay_main" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-3.3-all/55gk2rcmfc6p2dg9u9ohc3hw9/gradle-3.3/lib/gradle-installation-beacon-3.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-3.3-all/55gk2rcmfc6p2dg9u9ohc3hw9/gradle-3.3/src/installation-beacon" />
+        </SOURCES>
+      </library>
+    </orderEntry>
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -43,12 +53,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="Gradle: com.android.tools.build:gradle:2.3.0" level="project" />
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.10" level="project" />
-    <orderEntry type="library" name="Gradle: org.json:json:20090211" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.apis:google-api-services-androidpublisher:v2-rev41-1.22.0" level="project" />
-    <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.tools.build:gradle-core:2.3.0" level="project" />
+    <orderEntry type="module" module-name="easygoogleplay_main" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -67,86 +72,87 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.2.10" level="project" />
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.10" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.tools.build:gradle:3.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.21" level="project" />
+    <orderEntry type="library" name="Gradle: org.json:json:20090211" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.apis:google-api-services-androidpublisher:v2-rev41-1.22.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jgit:org.eclipse.jgit:2.2.0.201212191850-r" level="project" />
+    <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.tools.build:gradle-core:3.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.2.21" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.21" level="project" />
     <orderEntry type="library" name="Gradle: com.google.api-client:google-api-client:1.22.0" level="project" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-3.3-all/55gk2rcmfc6p2dg9u9ohc3hw9/gradle-3.3/lib/gradle-installation-beacon-3.3.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-3.3-all/55gk2rcmfc6p2dg9u9ohc3hw9/gradle-3.3/src/installation-beacon" />
-        </SOURCES>
-      </library>
-    </orderEntry>
+    <orderEntry type="library" name="Gradle: com.jcraft:jsch:0.1.44-1" level="project" />
     <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.tools.build:builder:2.3.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.tools.lint:lint:25.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.tools.build:builder:3.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.tools.lint:lint:26.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.tools.external.org-jetbrains:uast:26.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.tools.build:gradle-api:3.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.databinding:compilerCommon:3.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.android.tools.build:transform-api:2.0.0-deprecated-use-gradle-api" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.tools.build:gradle-api:2.3.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.databinding:compilerCommon:2.3.0" level="project" />
-    <orderEntry type="library" name="Gradle: org.ow2.asm:asm:5.0.4" level="project" />
-    <orderEntry type="library" name="Gradle: org.ow2.asm:asm-commons:5.0.4" level="project" />
-    <orderEntry type="library" name="Gradle: net.sf.proguard:proguard-gradle:5.3.2" level="project" />
-    <orderEntry type="library" name="Gradle: org.jacoco:org.jacoco.core:0.7.5.201505241946" level="project" />
-    <orderEntry type="library" name="Gradle: org.jacoco:org.jacoco.report:0.7.5.201505241946" level="project" />
+    <orderEntry type="library" name="Gradle: org.ow2.asm:asm:5.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.ow2.asm:asm-analysis:5.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.ow2.asm:asm-commons:5.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.ow2.asm:asm-util:5.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jacoco:org.jacoco.core:0.7.4.201502262128" level="project" />
+    <orderEntry type="library" name="Gradle: org.jacoco:org.jacoco.report:0.7.4.201502262128" level="project" />
     <orderEntry type="library" name="Gradle: net.sf.jopt-simple:jopt-simple:4.9" level="project" />
+    <orderEntry type="library" name="Gradle: net.sf.proguard:proguard-gradle:5.3.3" level="project" />
     <orderEntry type="library" name="Gradle: com.google.protobuf:protobuf-java:3.0.0" level="project" />
-    <orderEntry type="library" name="Gradle: org.antlr:antlr:3.5.2" level="project" />
-    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
     <orderEntry type="library" name="Gradle: com.google.oauth-client:google-oauth-client:1.22.0" level="project" />
     <orderEntry type="library" name="Gradle: com.google.http-client:google-http-client-jackson2:1.22.0" level="project" />
     <orderEntry type="library" name="Gradle: com.google.guava:guava-jdk5:17.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.tools.build:builder-model:2.3.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.tools.build:builder-test-api:2.3.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.tools:sdklib:25.3.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.tools:sdk-common:25.3.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.tools:common:25.3.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.tools.build:manifest-merger:25.3.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.tools.ddms:ddmlib:25.3.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.tools.jack:jack-api:0.13.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.tools.jill:jill-api:0.10.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.tools.analytics-library:protos:25.3.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.tools.analytics-library:shared:25.3.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.tools.analytics-library:tracker:25.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.tools.build:builder-model:3.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.tools.build:builder-test-api:3.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.tools:sdklib:26.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.tools:sdk-common:26.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.tools:common:26.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.tools.build:manifest-merger:26.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.tools.ddms:ddmlib:26.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.tools.analytics-library:protos:26.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.tools.analytics-library:shared:26.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.tools.analytics-library:tracker:26.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.tools.build:apksig:3.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup:javawriter:2.5.0" level="project" />
-    <orderEntry type="library" name="Gradle: org.bouncycastle:bcpkix-jdk15on:1.48" level="project" />
-    <orderEntry type="library" name="Gradle: org.bouncycastle:bcprov-jdk15on:1.48" level="project" />
-    <orderEntry type="library" name="Gradle: org.ow2.asm:asm-tree:5.0.4" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.tools.lint:lint-checks:25.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.bouncycastle:bcpkix-jdk15on:1.56" level="project" />
+    <orderEntry type="library" name="Gradle: org.bouncycastle:bcprov-jdk15on:1.56" level="project" />
+    <orderEntry type="library" name="Gradle: org.ow2.asm:asm-tree:5.1" level="project" />
+    <orderEntry type="library" name="Gradle: it.unimi.dsi:fastutil:7.2.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.googlecode.json-simple:json-simple:1.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.tools.lint:lint-checks:26.0.0" level="project" />
     <orderEntry type="library" name="Gradle: org.eclipse.jdt.core.compiler:ecj:4.6.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.guava:guava:18.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.databinding:baseLibrary:2.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.guava:guava:22.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.databinding:baseLibrary:3.0.0" level="project" />
     <orderEntry type="library" name="Gradle: org.antlr:antlr4:4.5.3" level="project" />
     <orderEntry type="library" name="Gradle: commons-io:commons-io:2.4" level="project" />
     <orderEntry type="library" name="Gradle: com.googlecode.juniversalchardet:juniversalchardet:1.0.3" level="project" />
-    <orderEntry type="library" name="Gradle: net.sf.proguard:proguard-base:5.3.2" level="project" />
-    <orderEntry type="library" name="Gradle: org.ow2.asm:asm-debug-all:5.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: org.antlr:antlr-runtime:3.5.2" level="project" />
-    <orderEntry type="library" name="Gradle: org.antlr:ST4:4.0.8" level="project" />
+    <orderEntry type="library" name="Gradle: net.sf.proguard:proguard-base:5.3.3" level="project" />
     <orderEntry type="library" name="Gradle: com.google.http-client:google-http-client:1.22.0" level="project" />
     <orderEntry type="library" name="Gradle: com.google.code.findbugs:jsr305:1.3.9" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.1.3" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.tools.layoutlib:layoutlib-api:25.3.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.tools:dvlib:25.3.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.tools:repository:25.3.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.2.4" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.commons:commons-compress:1.8.1" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpclient:4.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.tools.layoutlib:layoutlib-api:26.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.tools:dvlib:26.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.tools:repository:26.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-compress:1.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpclient:4.2.6" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpmime:4.1" level="project" />
     <orderEntry type="library" name="Gradle: net.sf.kxml:kxml2:2.3.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.tools.lint:lint-api:25.3.0" level="project" />
-    <orderEntry type="library" name="Gradle: org.ow2.asm:asm-analysis:5.0.4" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.tools.lint:lint-api:26.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.errorprone:error_prone_annotations:2.0.18" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.j2objc:j2objc-annotations:1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.mojo:animal-sniffer-annotations:1.14" level="project" />
     <orderEntry type="library" name="Gradle: com.intellij:annotations:12.0" level="project" />
     <orderEntry type="library" name="Gradle: com.google.jimfs:jimfs:1.1" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpcore:4.1" level="project" />
     <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.1.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.tools.external.com-intellij:uast:162.2228.14" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.tools.external.com-intellij:intellij-core:26.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.android.tools.external.lombok:lombok-ast:0.2.3" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.tools:annotations:25.3.0" level="project" />
-    <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-reflect:1.1.3-2" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.trove4j:trove4j:20160824" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.tools:annotations:26.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpcore:4.2.5" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="easygoogleplay_main" />
 </module>

@@ -1,4 +1,4 @@
-package me.tuple
+package me.tuple.playstore
 
 import com.google.api.client.googleapis.auth.oauth2.GoogleCredential
 import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport
@@ -11,11 +11,11 @@ import java.io.File
 import java.util.*
 
 /**
- * Created by gokul-4192.
+ * Created by Gokul.
  */
 object AuthHelper {
 
-    val APP_NAME = "easy_play"
+    val APP_NAME = "easy_google_play"
 
     private val httpTransport by lazy {
         GoogleNetHttpTransport.newTrustedTransport()
@@ -31,7 +31,7 @@ object AuthHelper {
         return credential.createScoped(Collections.singleton(AndroidPublisherScopes.ANDROIDPUBLISHER))
     }
 
-    fun setHttpTimeout(requestInitializer: HttpRequestInitializer): HttpRequestInitializer {
+    private fun setHttpTimeout(requestInitializer: HttpRequestInitializer): HttpRequestInitializer {
         return HttpRequestInitializer { request: HttpRequest ->
             apply {
                 requestInitializer.initialize(request)
@@ -41,9 +41,9 @@ object AuthHelper {
         }
     }
 
-    fun getPublisherApi(publishConfig: Config): AndroidPublisher {
+    fun getPublisherApi(publishConfig: PublishConfig): AndroidPublisher {
         if (publishConfig.jsonKeyPath != null) {
-            return AndroidPublisher.Builder(httpTransport, jsonFactory, setHttpTimeout(getCredentialFromJson(publishConfig.jsonKeyPath)))
+            return AndroidPublisher.Builder(httpTransport, jsonFactory, setHttpTimeout(getCredentialFromJson(publishConfig.jsonKeyPath!!)))
                     .setApplicationName(APP_NAME)
                     .build()
         } else {

@@ -1,6 +1,7 @@
-package me.tuple
+package me.tuple.playstore
 
 import com.google.api.client.http.FileContent
+import com.google.api.services.androidpublisher.model.Apk
 import com.google.api.services.androidpublisher.model.ApkListing
 import com.google.api.services.androidpublisher.model.Track
 import java.io.File
@@ -8,10 +9,11 @@ import java.util.*
 
 
 /**
- * Created by gokul-4192.
+ * Created by Gokul.
  */
 object PublishApk {
-    fun publish(publishConfig: Config) {
+
+    fun publish(publishConfig: PublishConfig): Apk {
 
         val api = AuthHelper.getPublisherApi(publishConfig)
 
@@ -40,21 +42,38 @@ object PublishApk {
                     .update(publishConfig.packageName, editId, apk.versionCode, "en", newApkListing)
                     .execute()
         }
+
+        println((String.format("What's new updated")))
+
+        publishConfig.mappingFile?.apply {
+            val fileStream = FileContent("application/octet-stream", File(publishConfig.mappingFile))
+            edits.deobfuscationfiles().upload(publishConfig.packageName, editId, apk.versionCode, "proguard", fileStream).execute()
+            println((String.format("Mapping file moved")))
+        }
+
         val apkVersionCodes = ArrayList<Int>()
         apkVersionCodes.add(apk.versionCode)
+        val tracks = Track().setVersionCodes(Collections.singletonList(apk.versionCode))
+        if (publishConfig.track.contentEquals(PublishTrack.ROLL_OUT.toString())) {
+            tracks.userFraction = publishConfig.rolloutPercent
+        }
+
+
         val updateTrackRequest = edits
                 .tracks()
                 .update(publishConfig.packageName,
                         editId,
-                        publishConfig.track.toString(),
-                        Track().setVersionCodes(Collections.singletonList(apk.versionCode)))
+                        publishConfig.track, tracks
+                )
         val updatedTrack = updateTrackRequest.execute()
         println(String.format("Track %s has been updated.", updatedTrack.track))
 
         // Commit changes for edit.
         val commitRequest = edits.commit(publishConfig.packageName, editId)
         val appEdit = commitRequest.execute()
+
         println(String.format("App edit with id %s has been comitted", appEdit.id))
 
+        return apk
     }
 }
