@@ -2,6 +2,6 @@
 A gradle plugin to make playstore publishing easier
 
 
-## Grab dependancy from : 
+## Grab dependency from : 
 
 https://jitpack.io/#Gokuldroid/EasyGooglePlay/
